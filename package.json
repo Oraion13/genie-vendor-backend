@@ -1,0 +1,19 @@
+{
+  "name": "genie-vendor-backend",
+  "version": "1.0.0",
+  "description": "Backend For Vendors - Sign up, Sign in, create products, edit and delete",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Oraion13/genie-vendor-backend"
+  },
+  "author": "Kannan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Oraion13/genie-vendor-backend/issues"
+  },
+  "homepage": "https://github.com/Oraion13/genie-vendor-backend#readme"
+}
