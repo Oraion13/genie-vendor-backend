@@ -6,6 +6,7 @@ services:
         NODE_ENV: development
     environment:
       - NODE_ENV=development
+      - DATABASE_URL=mongodb://oraion:iB2R9uoLn2uYe3ES@mongo:27017/genie?authSource=admin
     command: npm run dev
 
   mongo:
