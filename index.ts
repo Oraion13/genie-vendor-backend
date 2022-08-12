@@ -1,4 +1,4 @@
-const { APP_PORT } = require("./config/config");
+const { APP_PORT } = require("./utils/config");
 const app = require("./app")
 
 const PORT = APP_PORT;

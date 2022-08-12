@@ -4,7 +4,7 @@
   "description": "Backend For Vendors - Sign up, Sign in, create products, edit and delete",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node-dev --poll index.ts",
+    "dev": "nodemon index.ts",
     "build": "tsc",
     "start": "node dist"
   },

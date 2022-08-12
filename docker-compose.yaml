@@ -7,14 +7,15 @@ services:
       - PORT=3000
       - MONGO_USERNAME=oraion
       - MONGO_PASSWORD=iB2R9uoLn2uYe3ES
+      - SESSION_SECRET=99a31303d7b2173086c7bf91f5e4d6e4243e4c8b987f379544ee71304ed04b180adf33ec967172789fbbed4c7d1cdee6b5eeae9f1766cf9998f98b17706d9031
     volumes:
       - ./:/app:ro
       - /app/node_modules
+    depends_on:
+      - mongo
     
   mongo:
     image: mongo:5.0
-    ports:
-      - "27017:27017"
     environment:
       - MONGO_INITDB_ROOT_USERNAME=oraion
       - MONGO_INITDB_ROOT_PASSWORD=iB2R9uoLn2uYe3ES
@@ -23,8 +24,6 @@ services:
 
   redis:
     image: redis:7.0
-    ports:
-      - "6379:6379"
 
 volumes:
   mongo-genie:
