@@ -4,7 +4,7 @@
   "description": "Backend For Vendors - Sign up, Sign in, create products, edit and delete",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.ts",
+    "dev": "nodemon",
     "build": "tsc",
     "start": "node dist"
   },
@@ -49,6 +49,15 @@
     "typescript": "^4.7.4"
   },
   "nodemonConfig": {
-    "legacyWatch": true
+    "legacyWatch": true,
+    "watch": [
+      "src",
+      "prisma"
+    ],
+    "ext": "ts,json",
+    "ignore": [
+      "./**/*.spec.ts"
+    ],
+    "exec": "ts-node ./src/index.ts"
   }
 }
